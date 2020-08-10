@@ -8,5 +8,3 @@ RUN apk add -U ca-certificates git curl jq && \
     rm /var/cache/apk/*
 
 RUN curl -fsSL https://download.docker.com/linux/static/stable/`uname -m`/docker-$DOCKER_VERSION.tgz | tar --strip-components=1 -xz -C /usr/local/bin docker/docker
-
-RUN docker version
