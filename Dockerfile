@@ -2,7 +2,7 @@ FROM python:3.7.7-alpine3.12
 
 ARG DOCKER_VERSION=18.09.9
 
-RUN apk add -U ca-certificates git curl jq && \
+RUN apk add -U ca-certificates git curl jq openssh && \
     rm -rf linux-amd64 && \
     pip install awscli && \
     rm /var/cache/apk/*
