@@ -1,4 +1,4 @@
-FROM python:3.7.7-alpine3.12
+FROM python:3.7-alpine
 
 ARG DOCKER_VERSION=18.09.9
 
